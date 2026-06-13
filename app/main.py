@@ -3,6 +3,7 @@ from fastapi import FastAPI
 from app.database import Base, engine
 
 from app.routers import tweets, likes, retweets
+from app import models
 
 Base.metadata.create_all(bind=engine)
 
